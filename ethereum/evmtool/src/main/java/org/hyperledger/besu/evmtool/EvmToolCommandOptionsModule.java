@@ -95,7 +95,7 @@ public class EvmToolCommandOptionsModule {
       description =
           "Block number to evaluate against (default: 'PENDING', or 'EARLIEST', 'LATEST', or a number)",
       arity = "1")
-  private final BlockParameter blockParameter = BlockParameter.PENDING;
+  private final BlockParameter blockParameter = BlockParameter.LATEST;
 
   @Provides
   @Singleton
