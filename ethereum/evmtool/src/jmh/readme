@@ -1,0 +1,9 @@
+From the root project directory (besu) run:
+
+`./gradlew ethereum:evmtool:jmhJar`
+
+This should create .jar (`ethereum/evmtool/build/libs/evmtool-22.7.7-jmh.jar`). To run benchmark:
+
+`java -jar ethereum/evmtool/build/libs/evmtool-22.7.7-jmh.jar -rf json -rff JSON_OUTPUT_FILE -bm ss -p code=CODE_TO_RUN`
+
+it will produce some output to stdout/stderr and save results to JSON_OUTPUT_FILE in json format.
