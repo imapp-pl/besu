@@ -21,6 +21,7 @@ apply plugin: 'me.champeau.jmh'
 
 jmh {
     zip64 = true
+    benchmarkMode=["ss"]
 }
 
 jar {
